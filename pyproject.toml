@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pythonlings"
+version = "0.1.0"
+description = ""
+authors = ["Ronald-TR <ronald-farias@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+watchdog = "^2.1.6"
+colorama = "^0.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-mock = "^3.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
