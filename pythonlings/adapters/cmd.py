@@ -12,7 +12,7 @@ _ = i18n.t
 
 def run():
     parser = argparse.ArgumentParser(
-        description=i18n.t('p.description')
+        description=_('p.description')
     )
     parser.set_defaults(func=parser.print_help, type=bool)
 
