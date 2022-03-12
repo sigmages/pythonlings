@@ -1,5 +1,6 @@
 from pythonlings import __version__
-from pythonlings.__main__ import get_exercises_root, Exercise
+from pythonlings.services.exercises import get_exercises_root
+from pythonlings.domain.exercises import Exercise
 from uuid import uuid4
 import os
 import pytest
