@@ -1,2 +1,1 @@
-
-raise Exception('Sample test exception')
+raise Exception("Sample test exception")

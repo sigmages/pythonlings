@@ -7,7 +7,7 @@
 
 x = 1
 y = 0.1
-z = 'Hello'
+z = "Hello"
 
 assert isinstance(x, int)
 assert isinstance(y, float)

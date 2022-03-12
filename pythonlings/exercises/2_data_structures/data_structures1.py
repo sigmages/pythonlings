@@ -1,4 +1,3 @@
-
 dictionary1 = {}
 dictionary2 = dict()
 

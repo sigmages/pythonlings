@@ -16,11 +16,11 @@ def get_exercises_root() -> str:
     Returns:
         str: Exercises root
     """
-    path = os.path.join(os.getcwd(), 'pythonlings', 'exercises')
+    path = os.path.join(os.getcwd(), "pythonlings", "exercises")
     if not os.path.exists(path):
         raise FileNotFoundError(
-            f'Path: {path} does not exist.'
-            'Are you running Pythonlings in repository root?'
+            f"Path: {path} does not exist."
+            "Are you running Pythonlings in repository root?"
         )
     return path
 
@@ -31,7 +31,9 @@ def on_modified(event, exercise) -> None:
 
 
 def observe_exercise_until_pass(exercise: Exercise) -> None:
-    event_handler = PatternMatchingEventHandler(patterns=['*.py'], ignore_directories=True)
+    event_handler = PatternMatchingEventHandler(
+        patterns=["*.py"], ignore_directories=True
+    )
     event_handler.on_modified = partial(on_modified, exercise=exercise)
     observer = Observer()
     observer.schedule(event_handler, os.path.dirname(exercise.fp), recursive=False)
@@ -60,4 +62,4 @@ def process_exercises(args: argparse.Namespace) -> None:
 
 
 def process_single_exercise(args: argparse.Namespace) -> None:
-    raise NotImplemented
+    raise NotImplementedError
