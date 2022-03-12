@@ -5,8 +5,9 @@ Pythonlings is a multilingual utility to help newcomers learn Python through exe
 ## Setup your language
 
 Actually, the following languages are supported:
-    * en (default)
-    * pt
+
+- en (default)
+- pt
 
 To choose your language, just export `PYTHONLINGS_LANGUAGE` with the desired language.
 Example:
