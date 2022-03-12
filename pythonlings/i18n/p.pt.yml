@@ -1,0 +1,4 @@
+pt:
+  description: Pythonlings é um utilitário para ajudar iniciantes a aprender Python através de exercícios, em uma variedade de temas!
+  start_help: Inicia o Pythonlings! Executando e assistindo os arquivos de exercício em ordem.
+  exec_help: Executa apenas um exercicio, você apenas deve prover o caminho relativo ou absoluto do arquivo do exercicio.
