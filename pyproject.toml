@@ -8,6 +8,8 @@ authors = ["Ronald-TR <ronald-farias@outlook.com>"]
 python = "^3.9"
 watchdog = "^2.1.6"
 colorama = "^0.4.4"
+click = "^8.0.4"
+python-i18n = {extras = ["YAML"], version = "^0.3.9"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

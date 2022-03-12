@@ -1,0 +1,4 @@
+en:
+  description: Pythonlings is a utility to help newcomers learn Python through exercises, with a variety of themes!
+  start_help: Start Pythonlings! Executing and watching the exercise files in order.
+  exec_help: Executes a single exercise, you just need to give the absolute or the relative path.

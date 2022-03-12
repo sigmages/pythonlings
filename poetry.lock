@@ -21,6 +21,17 @@ tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)"
 tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "cloudpickle"]
 
 [[package]]
+name = "click"
+version = "8.0.4"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[[package]]
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
@@ -114,6 +125,17 @@ pytest = ">=5.0"
 dev = ["pre-commit", "tox", "pytest-asyncio"]
 
 [[package]]
+name = "python-i18n"
+version = "0.3.9"
+description = "Translation library for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+yaml = ["pyyaml (>=3.10)"]
+
+[[package]]
 name = "watchdog"
 version = "2.1.6"
 description = "Filesystem events monitoring"
@@ -135,7 +157,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "e48f2cf04959bd20dc95aac2ce11c799f3d3da4d764c1c5d4d8f5cb9c253d91f"
+content-hash = "34e2bfc79f810a76040b85dacef91b26a097aef76331a27ddde25425f19f3582"
 
 [metadata.files]
 atomicwrites = [
@@ -145,6 +167,10 @@ atomicwrites = [
 attrs = [
     {file = "attrs-21.4.0-py2.py3-none-any.whl", hash = "sha256:2d27e3784d7a565d36ab851fe94887c5eccd6a463168875832a1be79c82828b4"},
     {file = "attrs-21.4.0.tar.gz", hash = "sha256:626ba8234211db98e869df76230a137c4c40a12d72445c45d5f5b716f076e2fd"},
+]
+click = [
+    {file = "click-8.0.4-py3-none-any.whl", hash = "sha256:6a7a62563bbfabfda3a38f3023a1db4a35978c0abd76f6c9605ecd6554d6d9b1"},
+    {file = "click-8.0.4.tar.gz", hash = "sha256:8458d7b1287c5fb128c90e23381cf99dcde74beaf6c7ff6384ce84d6fe090adb"},
 ]
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
@@ -177,6 +203,10 @@ pytest = [
 pytest-mock = [
     {file = "pytest-mock-3.7.0.tar.gz", hash = "sha256:5112bd92cc9f186ee96e1a92efc84969ea494939c3aead39c50f421c4cc69534"},
     {file = "pytest_mock-3.7.0-py3-none-any.whl", hash = "sha256:6cff27cec936bf81dc5ee87f07132b807bcda51106b5ec4b90a04331cba76231"},
+]
+python-i18n = [
+    {file = "python-i18n-0.3.9.tar.gz", hash = "sha256:df97f3d2364bf3a7ebfbd6cbefe8e45483468e52a9e30b909c6078f5f471e4e8"},
+    {file = "python_i18n-0.3.9-py3-none-any.whl", hash = "sha256:bda5b8d889ebd51973e22e53746417bd32783c9bd6780fd27cadbb733915651d"},
 ]
 watchdog = [
     {file = "watchdog-2.1.6-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:9693f35162dc6208d10b10ddf0458cc09ad70c30ba689d9206e02cd836ce28a3"},
