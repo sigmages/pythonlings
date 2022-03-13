@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://something-fresh.org/posts/get-started/</loc>
+    <loc>https://sigmages.github.io/pythonlings/posts/get-started/</loc>
   </url><url>
-    <loc>http://something-fresh.org/</loc>
+    <loc>https://sigmages.github.io/pythonlings/</loc>
   </url><url>
-    <loc>http://something-fresh.org/posts/</loc>
+    <loc>https://sigmages.github.io/pythonlings/posts/</loc>
   </url>
 </urlset>

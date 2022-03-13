@@ -1,4 +1,4 @@
-baseURL: http://something-fresh.org/
+baseURL: https://sigmages.github.io/pythonlings/
 languageCode: en-us
 title: Hugo Fresh Theme
 theme: hugo-fresh
