@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="142.4453526298768" viewBox="59 0 80 100" style="background:rgba(0,0,0,0)">
+  <defs id="SvgjsDefs4793">
+    <linearGradient id="SvgjsLinearGradient4798">
+      <stop id="SvgjsStop4799" stop-color="#00ff8f" offset="0"/>
+      <stop id="SvgjsStop4800" stop-color="#00a1ff" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="SvgjsG4794" featurekey="symbolFeature-0" transform="matrix(1.1111111111111112,0,0,1.1111111111111112,44.44444444444444,-5.555555555555555)" fill="#a0e4b0">
+    <path xmlns="http://www.w3.org/2000/svg" d="M61.25,50v33.75h-5.625V27.5h22.5v-4.406h10.969l-1.656-1.641l1.688-1.641h-11V5h-33.75v78.75H38.75v-45H5v22.5h22.5V95h45  V72.5H95V50H61.25z M70.333,10h3.833v3.833h-3.833V10z M63.5,10h3.833v3.833H63.5V10z M12.708,47.875H8.875v-3.834h3.833V47.875z   M19.291,47.875h-3.833v-3.834h3.833V47.875z M84.458,58.875h-3.833v-3.834h3.833V58.875z M91.041,58.875h-3.833v-3.834h3.833  V58.875z"/>
+  </g>
+</svg>

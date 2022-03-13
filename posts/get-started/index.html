@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+
+<meta property="og:title" content="Get Started" />
+<meta property="og:description" content="Pythonlings é um utilitário para ajudar iniciantes a aprender Python através de exercícios, em uma variedade de temas!
+Escolha sua linguagem Atualmente, as seguintes linguagens são suportadas:
+ en (default) pt  Para escolher sua linguagem, apenas exporte PYTHONLINGS_LANGUAGE com a sigla da palavra desejada:
+Exemplo:
+export PYTHONLINGS_LANGUAGE=pt  Uso Inicie o ambiente com poetry:
+poetry install poetry shell  Após a instalação das dependências e as pre-configurações padrões serem aplicadas, você poderá executar a ferramenta:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://something-fresh.org/posts/get-started/" /><meta property="article:section" content="posts" />
+
+
+
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hugo Fresh Theme</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.0716df82c59b46eb0b19ff92fab552fc16c047bf08587a79e580f97e70330158.css" integrity="sha256-BxbfgsWbRusLGf&#43;S&#43;rVS/BbAR78IWHp55YD5fnAzAVg=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+
+    
+
+
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/logo_snake.svg" alt="" width="112" height="28">
+      </a>
+      <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+        <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-start">
+          <a class="navbar-item is-hidden-mobile">
+            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+              <svg width="1000px" height="1000px">
+                <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                <path class="path2" d="M 300 500 L 700 500"></path>
+                <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+              </svg>
+              <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+            </div>
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <a href="/about" class="navbar-item is-secondary">
+            About
+          </a>
+          <a href="/posts/get-started" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              Get started
+            </span>
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/logo_snake.svg" alt="" width="112" height="28">
+      </a>
+      <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+        <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+      <div class="navbar-start">
+        <a class="navbar-item is-hidden-mobile">
+          <div id="cloned-menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="cloned-menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <a href="/about" class="navbar-item is-secondary">
+          About
+        </a>
+        <a href="/posts/get-started" class="navbar-item">
+          <span class="button signup-button rounded secondary-btn raised">
+            Get started
+          </span>
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Get Started</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <p>Pythonlings é um utilitário para ajudar iniciantes a aprender Python através de exercícios, em uma variedade de temas!</p>
+<h2 id="escolha-sua-linguagem">Escolha sua linguagem</h2>
+<p>Atualmente, as seguintes linguagens são suportadas:</p>
+<ul>
+<li>en (default)</li>
+<li>pt</li>
+</ul>
+<p>Para escolher sua linguagem, apenas exporte <code>PYTHONLINGS_LANGUAGE</code> com a sigla da palavra desejada:</p>
+<p>Exemplo:</p>
+<pre><code>export PYTHONLINGS_LANGUAGE=pt
+</code></pre>
+<h2 id="uso">Uso</h2>
+<p>Inicie o ambiente com poetry:</p>
+<pre><code>poetry install
+poetry shell
+</code></pre>
+<p>Após a instalação das dependências e as pre-configurações padrões serem aplicadas, você poderá executar a ferramenta:</p>
+<pre><code>python -m pythonlings start
+</code></pre>
+<p>Com isso, os exemplos começarão a ser executados em ordem tópico a tópico, os arquivos de exemplos estarão contidos dentro de <code>pythonlings/exercises</code>, você deverá fazer com que os arquivos sejam executados <strong>sem problemas</strong> corrigindo-os para que passem nos testes, remova a linha de comentário <code># I AM NOT DONE</code> do exercício atual para que o Pythonlings o execute.</p>
+<h3 id="comandos">Comandos</h3>
+<pre tabindex="0"><code>usage: __main__.py [-h] {start,exec} ...
+
+Pythonlings é um utilitário para ajudar iniciantes a aprender Python através de exercícios, em uma variedade de temas!
+
+positional arguments:
+  {start,exec}
+    start       Inicia o Pythonlings! Executando e assistindo os arquivos de exercício em ordem.
+    exec        Executa apenas um exercicio, você apenas deve prover o caminho relativo ou absoluto do arquivo do exercicio.
+
+optional arguments:
+  -h, --help    show this help message and exit
+</code></pre><h2 id="desenvolvimento">Desenvolvimento</h2>
+<p>Para os desenvolvedores, inicialmente execute <code>poetry install</code> para ter um ambiente local isolado.</p>
+<h2 id="tests">Tests</h2>
+<pre><code>poetry run pytest
+</code></pre>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+    
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="/images/logos/logo_snake.svg">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      
+      <li>
+        <a href="http://something-fresh.org/posts/get-started/">
+          Get Started
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>
