@@ -1,5 +1,4 @@
-<!-- ![logo.svg](./logo.svg) -->
-<img src="./logo.svg">
+<img src="./logo/logo.png" width="200">
 
 
 Pythonlings is a multilingual utility to help newcomers learn Python through exercises, with a variety of themes!
