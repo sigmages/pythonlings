@@ -7,3 +7,6 @@ doc-get-theme:
 
 doc-clean:
 	cd docs && ls -1 | grep -v "src" | xargs rm -r && cd ..
+
+lint:
+	poetry run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics --exclude=pythonlings/exercises,tests/fixtures
