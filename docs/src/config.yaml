@@ -20,7 +20,7 @@ params:
   navbarlogo:
   # Logo (from static/images/logos/___)
     image: logos/logo_snake.svg
-    link: /
+    link: /pythonlings
   font:
     name: "Open Sans"
     sizes: [400,600]
@@ -32,7 +32,7 @@ params:
     # Button text
     buttontext: Get started
     # Where the main hero button links to
-    buttonlink: "/posts/get-started"
+    buttonlink: "/pythonlings/posts/get-started"
     # Hero image (from static/images/___)
     # image: illustrations/worker.svg
     image: logos/logo.svg
@@ -48,7 +48,7 @@ params:
   - title: About
     url: /about
   - title: Get started
-    url: /posts/get-started
+    url: /pythonlings/posts/get-started
     button: true
   # section1:
   #   title: Great power comes
