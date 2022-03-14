@@ -49,9 +49,10 @@ def observe_exercise_until_pass(exercise: Exercise) -> None:
             time.sleep(1)
         else:
             raise KeyboardInterrupt
-    except KeyboardInterrupt:
+    except KeyboardInterrupt as E:
         observer.stop()
-    observer.join()
+        observer.join()
+        exit(0)
 
 
 def process_exercises(args: argparse.Namespace) -> None:
