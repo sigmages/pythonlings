@@ -1,10 +1,11 @@
 import os
 import time
-from functools import partial
+from functools import partial, lru_cache
 import argparse
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from pythonlings.domain.exercises import Exercise
+from pythonlings.services.logging import logger
 
 
 def get_exercises_root() -> str:
@@ -25,9 +26,14 @@ def get_exercises_root() -> str:
     return path
 
 
+@lru_cache(maxsize=1)
+def safe_print(msg: str):
+    logger.info(msg)
+
+
 def on_modified(event, exercise) -> None:
     exercise.process()
-    print(exercise)
+    safe_print(str(exercise))
 
 
 def observe_exercise_until_pass(exercise: Exercise) -> None:
@@ -56,7 +62,7 @@ def process_exercises(args: argparse.Namespace) -> None:
             fp = os.path.join(path, file)
             exercise = Exercise(fp)
             exercise.process()
-            print(exercise)
+            logger.info(exercise)
             if exercise.error or exercise.to_do:
                 observe_exercise_until_pass(exercise)
 
