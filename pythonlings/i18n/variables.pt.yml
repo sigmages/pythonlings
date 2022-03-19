@@ -1,0 +1,6 @@
+pt:
+  variables1: |
+    Python é uma linguagem com tipagem forte e dinâmica
+    Isso significa que o interpretador vai dinamicamente atribuir o tipo da variavel durante a atribuição.
+    Porém uma vez tipado, a variavel vai ter um tipo forte, respeitando os protocolos e comportamentos do seu tipo.
+  variables2: Você deverá corrigir os casos de testes atribuindo os tipos corretos as variáveis!

@@ -1,7 +1,10 @@
 from colorama import Fore
 import subprocess as subp
+import i18n
+import os
 from abc import ABC, abstractmethod
 
+_ = i18n.t
 
 class BaseExercise(ABC):
     @abstractmethod
@@ -26,12 +29,33 @@ class Exercise:
         self.output = None
         self.to_do = None
         self.is_not_done()
+        self.package, self.name = self.exercise_metadata()
+
+    def exercise_metadata(self):
+        package = os.path.basename(os.path.dirname(self.fp)).split('_')[1]
+        exercise_name = os.path.splitext(os.path.basename(self.fp))[0]
+        return package, exercise_name
 
     def __str__(self) -> str:
-        error_msg = f"Oops, something goes wrong in {self.fp} {Fore.RED}[ERROR]\n\n{Fore.RESET}{self.output}"
-        success_msg = f"{self.fp} {Fore.GREEN}[SUCCESS]!{Fore.RESET}"
+        hint = _(f'{self.package}.{self.name}')
+        error_msg = f""""
+        {self.fp} {Fore.RED}[{_('p.error_flag')}]
+        {Fore.GREEN}
+        {hint}
+        {Fore.RESET}
+        {self.output}
+        """
+        success_msg = f"""
+        {self.fp} {Fore.GREEN}[{_('p.success_flag')}]!{Fore.RESET}
+        """
+        makeitpass_msg = f""""
+        {self.fp} {Fore.CYAN}[{_('p.make_it_pass_flag')}]!
+        {Fore.GREEN}
+        {hint}{Fore.RESET}
+        """
         if self.to_do:
-            return f"{self.fp} {Fore.CYAN}[MAKE IT PASS]!{Fore.RESET}"
+            return makeitpass_msg
+
         return error_msg if self.error else success_msg
 
     def __bool__(self) -> bool:

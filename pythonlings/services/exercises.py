@@ -2,11 +2,13 @@ import os
 import time
 from functools import partial, lru_cache
 import argparse
+from colorama import Fore
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from pythonlings.domain.exercises import Exercise
 from pythonlings.services.logging import logger
-
+import i18n
+_ = i18n.t
 
 def get_exercises_root() -> str:
     """Returns the exercises path root
@@ -48,7 +50,11 @@ def observe_exercise_until_pass(exercise: Exercise) -> None:
         while exercise.error or exercise.to_do:
             time.sleep(1)
         else:
-            raise KeyboardInterrupt
+            raise StopIteration
+    except StopIteration:
+        observer.stop()
+        observer.join()
+
     except KeyboardInterrupt as E:
         observer.stop()
         observer.join()

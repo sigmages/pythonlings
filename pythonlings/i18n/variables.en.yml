@@ -1,0 +1,6 @@
+en:
+  variables1: |
+    Python is a language is strong and dynamic typing
+    This means that the interpreter will dynamically set the variable type during attribuitions
+    But once typed, the variable will have a type, respecting the protocols and behaviors of their type.
+  variables2: You have to fix this program by attribuiting the right types to the variables!
