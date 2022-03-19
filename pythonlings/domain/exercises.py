@@ -6,6 +6,7 @@ from abc import ABC, abstractmethod
 
 _ = i18n.t
 
+
 class BaseExercise(ABC):
     @abstractmethod
     def is_not_done(self):
