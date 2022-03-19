@@ -39,18 +39,15 @@ class Exercise:
 
     def __str__(self) -> str:
         hint = _(f'{self.package}.{self.name}')
-        error_msg = f""""
-        {self.fp} {Fore.RED}[{_('p.error_flag')}]
+        error_msg = f""""{self.fp} {Fore.RED}[{_('p.error_flag')}]
         {Fore.GREEN}
         {hint}
         {Fore.RESET}
         {self.output}
         """
-        success_msg = f"""
-        {self.fp} {Fore.GREEN}[{_('p.success_flag')}]!{Fore.RESET}
+        success_msg = f"""{self.fp} {Fore.GREEN}[{_('p.success_flag')}]!{Fore.RESET}
         """
-        makeitpass_msg = f""""
-        {self.fp} {Fore.CYAN}[{_('p.make_it_pass_flag')}]!
+        makeitpass_msg = f""""{self.fp} {Fore.CYAN}[{_('p.make_it_pass_flag')}]!
         {Fore.GREEN}
         {hint}{Fore.RESET}
         """
