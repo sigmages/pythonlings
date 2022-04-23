@@ -3,4 +3,10 @@ en:
     Python is a language is strong and dynamic typing
     This means that the interpreter will dynamically set the variable type during attribuitions
     But once typed, the variable will have a type, respecting the protocols and behaviors of their type.
-  variables2: You have to fix this program by attribuiting the right types to the variables!
+  variables2: |
+    You have to fix this program by attribuiting the right types to the variables!
+    Remember that the types are attributed during the variable initialization.
+    If you change the value, you change te final variable type! 
+  variables3: |
+    In Python you can assign a single value to multiple variables at same time.
+    You still can assign multiple values to multiple variables, this techique is called unpacking.

@@ -3,4 +3,11 @@ pt:
     Python é uma linguagem com tipagem forte e dinâmica
     Isso significa que o interpretador vai dinamicamente atribuir o tipo da variavel durante a atribuição.
     Porém uma vez tipado, a variavel vai ter um tipo forte, respeitando os protocolos e comportamentos do seu tipo.
-  variables2: Você deverá corrigir os casos de testes atribuindo os tipos corretos as variáveis!
+  variables2: |
+    Você deverá corrigir os casos de testes atribuindo os tipos corretos as variáveis!
+    Lembre-se que os tipos são atribuidos durante a inicialização das variáveis.
+    Se voê mudar o valor atribuído, você muda o tipo da variavel!
+  variables3: |
+    Em Python você consegue atribuir um único valor em multiplas variávesl ao mesmo tempo.
+    Você também consegue atribuir multiplos valores à multiplas variáveis na mesma expressão,
+    essa tecnica é chamada de "unpacking" (desempacotamento).
