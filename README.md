@@ -16,10 +16,16 @@ Example:
 
     export PYTHONLINGS_LANGUAGE=pt
 
+## Install dependencies
+
+    poetry install
+
 
 ## Usage
 
-    poetry run -m pythonlings
+    poetry shell
+    python -m pythonlings start
+
 
 ## Tests
 
