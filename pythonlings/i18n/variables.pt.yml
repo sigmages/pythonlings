@@ -1,6 +1,6 @@
 pt:
   variables1: |
-    Python é uma linguagem com tipagem forte e dinâmica
+    Python é uma linguagem orientada a objetos e com tipagem forte e dinâmica
     Isso significa que o interpretador vai dinamicamente atribuir o tipo da variavel durante a atribuição.
     Porém uma vez tipado, a variavel vai ter um tipo forte, respeitando os protocolos e comportamentos do seu tipo.
   variables2: |
@@ -11,3 +11,7 @@ pt:
     Em Python você consegue atribuir um único valor em multiplas variávesl ao mesmo tempo.
     Você também consegue atribuir multiplos valores à multiplas variáveis na mesma expressão,
     essa tecnica é chamada de "unpacking" (desempacotamento).
+  variables4: |
+    Variáveis podem ser usadas para compor outras variáveis através de operadores e protocolos (que veremos adiante),
+    por baixo dos panos, operadores no Python utilizam os protocolos implementados pelos seus tipos para resolver as operações.
+    Por hora, podemos assumir que os tipos "int" e "str" implementam estes protocolos de adição, nos possibilitando somar valores *do mesmo tipo*, obtendo um novo como resultado.

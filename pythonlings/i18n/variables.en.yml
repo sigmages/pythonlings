@@ -1,6 +1,6 @@
 en:
   variables1: |
-    Python is a language is strong and dynamic typing
+    Python is a language that is object oriented, strong and dynamic typing
     This means that the interpreter will dynamically set the variable type during attribuitions
     But once typed, the variable will have a type, respecting the protocols and behaviors of their type.
   variables2: |
@@ -10,3 +10,7 @@ en:
   variables3: |
     In Python you can assign a single value to multiple variables at same time.
     You still can assign multiple values to multiple variables, this techique is called unpacking.
+  variables4: |
+    Variables can be used to compound other variables trough operators and protocols (that we'll see later),
+    behind the scenes, operators in Python uses protocols implemented by types to solve the operations.
+    For now, we can assume that the types "int" and "str" implements the addition protocol, allowing us to sum values *at same type*, obtaining a new as result.
