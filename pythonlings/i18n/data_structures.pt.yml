@@ -1,0 +1,6 @@
+en:
+  data_structures1: |
+    Em Python, listas são estruturas de dados mutáveis extremamente flexíveis que podemos usar
+    para armazenar qualquer coisa! Após criadas, nós podemos adicionar, remover e mudar seus valores através dos índices.
+
+    Faça o teste passar deixando a lista com os requisitos dos casos de teste.
