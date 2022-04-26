@@ -1,6 +1,27 @@
 pt:
   variables1: |
-    Python é uma linguagem com tipagem forte e dinâmica
+    Python é uma linguagem orientada a objetos e com tipagem forte e dinâmica
     Isso significa que o interpretador vai dinamicamente atribuir o tipo da variavel durante a atribuição.
     Porém uma vez tipado, a variavel vai ter um tipo forte, respeitando os protocolos e comportamentos do seu tipo.
-  variables2: Você deverá corrigir os casos de testes atribuindo os tipos corretos as variáveis!
+  variables2: |
+    Você deverá corrigir os casos de testes atribuindo os tipos corretos as variáveis!
+    Lembre-se que os tipos são atribuidos durante a inicialização das variáveis.
+    Se voê mudar o valor atribuído, você muda o tipo da variavel!
+  variables3: |
+    Em Python você consegue atribuir um único valor em multiplas variávesl ao mesmo tempo.
+    Você também consegue atribuir multiplos valores à multiplas variáveis na mesma expressão,
+    essa tecnica é chamada de "unpacking" (desempacotamento).
+  variables4: |
+    Variáveis podem ser usadas para compor outras variáveis através de operadores e protocolos (que veremos adiante),
+    por baixo dos panos, operadores no Python utilizam os protocolos implementados pelos seus tipos para resolver as operações.
+    Por hora, podemos assumir que os tipos "int" e "str" implementam estes protocolos de adição, nos possibilitando somar valores *do mesmo tipo*, obtendo um novo como resultado.
+  variables5: |
+    Em Python, nós temos o conceito de tipos mutáveis e imutáveis.
+    Tipos imutáveis são: int, str, boolean, float e tuples.
+    Tipos mutáveis são: list, dict e set.
+
+    Para variáveis imutáveis, isso significa que uma vez criadas, nós não podemos mudar seus valores em memória (através de indices ou métodos). 
+    Porém, tipos mutáveis nos permitem mudar seus valores em memória.
+    
+    Tipos imutáveis são "baratos" para acessar e "caros" para mudar, enquanto tipos mutáveis tendem a inverter estas caracteristicas.
+    Por favor mantenha isso em mente, nós iremos discuti-los melhor no módulo de "Data Structures".
