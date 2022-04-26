@@ -15,3 +15,13 @@ pt:
     Variáveis podem ser usadas para compor outras variáveis através de operadores e protocolos (que veremos adiante),
     por baixo dos panos, operadores no Python utilizam os protocolos implementados pelos seus tipos para resolver as operações.
     Por hora, podemos assumir que os tipos "int" e "str" implementam estes protocolos de adição, nos possibilitando somar valores *do mesmo tipo*, obtendo um novo como resultado.
+  variables5: |
+    Em Python, nós temos o conceito de tipos mutáveis e imutáveis.
+    Tipos imutáveis são: int, str, boolean, float e tuples.
+    Tipos mutáveis são: list, dict e set.
+
+    Para variáveis imutáveis, isso significa que uma vez criadas, nós não podemos mudar seus valores em memória (através de indices ou métodos). 
+    Porém, tipos mutáveis nos permitem mudar seus valores em memória.
+    
+    Tipos imutáveis são "baratos" para acessar e "caros" para mudar, enquanto tipos mutáveis tendem a inverter estas caracteristicas.
+    Por favor mantenha isso em mente, nós iremos discuti-los melhor no módulo de "Data Structures".
