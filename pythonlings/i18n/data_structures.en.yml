@@ -1,6 +1,6 @@
 en:
   data_structures1: |
-    In Python, lists are mutable data structures extremally flexible that we can use to store anything!
-    Once created, we can add, remove or change their values trough indices.
+    In Python, the lists are mutable data structures extremely flexible that we can use to store anything!
+    Once created, we can add, remove or change their values through indices.
 
     Make the test pass keeping the list with the same requisites from the test cases.
