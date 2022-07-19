@@ -14,10 +14,10 @@
       <guid>https://sigmages.github.io/pythonlings/posts/get-started/</guid>
       <description>Pythonlings é um utilitário para ajudar iniciantes a aprender Python através de exercícios, em uma variedade de temas!
 Escolha sua linguagem Atualmente, as seguintes linguagens são suportadas:
- en (default) pt  Para escolher sua linguagem, apenas exporte PYTHONLINGS_LANGUAGE com a sigla da palavra desejada:
+en (default) pt Para escolher sua linguagem, apenas exporte PYTHONLINGS_LANGUAGE com a sigla da palavra desejada:
 Exemplo:
-export PYTHONLINGS_LANGUAGE=pt  Uso Inicie o ambiente com poetry:
-poetry install poetry shell  Após a instalação das dependências e as pre-configurações padrões serem aplicadas, você poderá executar a ferramenta:</description>
+export PYTHONLINGS_LANGUAGE=pt Uso Inicie o ambiente com poetry:
+poetry install poetry shell Após a instalação das dependências e as pre-configurações padrões serem aplicadas, você poderá executar a ferramenta:</description>
     </item>
     
   </channel>
